@@ -1,3 +1,11 @@
+
+####################################################################################
+# variables   b1,b2
+# threads     main,thread_to_read_bot1_move_from_file,thread_to_read_bot2_move_from_file
+# locks       bot1move_lock,bot2_move_lock
+##################################################################################
+
+
 #!/usr/bin/python
 
 import threading
@@ -11,6 +19,7 @@ bot2_move_lock=threading.Lock() #lock ot provide syncrhonisation to b2
 
 
 exitFlag = 0
+
 
 class thread_to_read_bot1_move_from_file (threading.Thread):
 
@@ -44,22 +53,28 @@ class thread_to_read_bot2_move_from_file (threading.Thread):
         bot2_move_lock.release()
         print "Exiting " + str(self.threadID)
 
-
+#start threads
 bot1_move_file=open("files/bot1_move","r")
 bot2_move_file=open("files/bot2_move","r")
 thread1 = thread_to_read_bot1_move_from_file(1,bot1_move_file)
 thread2 = thread_to_read_bot2_move_from_file(1,bot2_move_file)
-
-
-
-
 thread1.start()
 thread2.start()
 
+
+
+
+#    the rest of the engine code which will constantly read the variables b1 and b2
+#    and update the map. The variables b1 and b2 will have to be locked before reading 
+#    (or may b not)
+#    This is jus test code. b1 initaised as above . The threads individually write to
+#    it by reading from the respective files. This main thread will read b1 and b2 and
+#    move the bot accordingly.
 while(True):
     if ( thread1.isAlive() or thread2.isAlive()):
         continue
-    if( bot1_move_lock.acquire(False)):
+    if( bot1_move_lock.acquire(False) && bot2_move_lock_acquire(False)):
+
         print b1,b2
         break
     else:
