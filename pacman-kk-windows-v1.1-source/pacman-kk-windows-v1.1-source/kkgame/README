@@ -1,0 +1,7 @@
+This folder has the files to execute the bots and keep the log of their moves which will be used to see it in a browser later.
+
+
+game.c			--> Game engine. Takes map, bot1 name and bot2 name as input and 
+			    writes the log into the trace.txt file present in pacman-kk-windows-v1.0/viewer.
+
+

@@ -1,0 +1,23 @@
+21 20
+W W W W W W W W W W W W W W W W W W W W 
+W E e e e W e e e e e e e e W e e e e W 
+W e W W e W e W W W W W W e W e W W e W 
+W e W e e e e e e a e b e e e e e W e W 
+W e W e W W e W W . . W W e W W e W e W 
+W e e e e e e W c . . . W e e e e e e W 
+W e W e W W e W W W W W W e W W e W e W 
+W e W e e e e e e e e e e e e e e W e W 
+W e W W e W e W W W W W W e W e W W e W 
+W e e e e W e e e d . . . p W e e e E W 
+W e e W W W W W e e e e W W W W W e e W 
+W E e e e W P . . . A e e e W e e e e W 
+W e W W e W e W W W W W W e W e W W e W 
+W e W e e e e e e e e e e e e e e W e W 
+W e W e W W e W W W W W W e W W e W e W 
+W e e e e e e W . . . B W e e e e e e W 
+W e W e W W e W W . . W W e W W e W e W 
+W e W e e e e e C e D e e e e e e W e W 
+W e W W e W e W W W W W W e W e W W e W 
+W e e e e W e e e e e e e e W e e e E W 
+W W W W W W W W W W W W W W W W W W W W 
+0 0

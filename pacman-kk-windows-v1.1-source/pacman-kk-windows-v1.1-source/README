@@ -1,0 +1,29 @@
+This is the source code for the game engine.
+
+kkgame			 	--> The game engine
+maps   			 	--> Different maps of the game arena.
+viewer 			 	--> Contains files needed to see the game
+viewer.html and viewer.js 	--> To see the game.
+
+
+
+
+Executing sample bots:
+---------------------------------------------------------------------------
+1. Open Terminal. 
+2. Change directory to pacman-kk-windows-v1.0/kkgame
+3. Run game.exe <map> <bot1> <bot2>
+In case the executable does not work, compile the game.c to get the executable.
+4. Change directory to pacman-kk-windows-v1.0/viewer
+5. Run view.exe
+6. View the arena in viewer.html
+
+Testing your bot:
+----------------------------------------------------------------------------
+1.Make a folder containing your bot programs.Name the folder with your bot name
+2.Create an executable of your bot with the name "pacman" in this folder.
+3.Place the folder inside pacman-kk-windows-v1.0/kkgame
+4.Follow the same instructions as Executing sample bots. In step 3 replace one of the bots with your bot name.
+Example: game.exe map1.txt my_bot bb
+
+The final bot will be tested on linux environment. Please make sure your code works on linux too.
