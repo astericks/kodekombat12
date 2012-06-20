@@ -1,0 +1,4 @@
+#!/usr/bin/bash
+
+echo $1 >files/bot1_move
+echo $2 >files/bot2_move
